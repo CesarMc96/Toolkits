@@ -17,7 +17,6 @@ public class Automatizar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jFileChooser1 = new javax.swing.JFileChooser();
         pnlPrincipal = new javax.swing.JPanel();
         pnlInformacion = new javax.swing.JPanel();
         lblTituloTarea = new javax.swing.JLabel();
@@ -30,8 +29,10 @@ public class Automatizar extends javax.swing.JFrame {
         lblArchivo = new javax.swing.JLabel();
         lblUbicacion = new javax.swing.JLabel();
         lblEstaciones = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
+        button1 = new java.awt.Button();
         lblTitulo = new javax.swing.JLabel();
-        jFileChooser2 = new javax.swing.JFileChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Automatizar");
@@ -103,6 +104,14 @@ public class Automatizar extends javax.swing.JFrame {
         lblEstaciones.setForeground(new java.awt.Color(0, 0, 0));
         lblEstaciones.setText("Estaciones");
 
+        jScrollPane1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jTextPane1.setBackground(new java.awt.Color(255, 255, 255));
+        jScrollPane1.setViewportView(jTextPane1);
+
+        button1.setActionCommand("");
+        button1.setLabel("button1");
+
         javax.swing.GroupLayout pnlInformacionLayout = new javax.swing.GroupLayout(pnlInformacion);
         pnlInformacion.setLayout(pnlInformacionLayout);
         pnlInformacionLayout.setHorizontalGroup(
@@ -114,14 +123,19 @@ public class Automatizar extends javax.swing.JFrame {
                         .addComponent(pnlHorario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(55, 55, 55)
                         .addGroup(pnlInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblArchivo)
+                            .addGroup(pnlInformacionLayout.createSequentialGroup()
+                                .addComponent(lblArchivo)
+                                .addGap(51, 51, 51)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(lblUbicacion)
                             .addComponent(lblEstaciones)))
                     .addGroup(pnlInformacionLayout.createSequentialGroup()
                         .addComponent(lblTituloTarea)
                         .addGap(18, 18, 18)
                         .addComponent(txtTituloTarea, javax.swing.GroupLayout.PREFERRED_SIZE, 605, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
         pnlInformacionLayout.setVerticalGroup(
             pnlInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -135,12 +149,17 @@ public class Automatizar extends javax.swing.JFrame {
                         .addGap(39, 39, 39)
                         .addComponent(pnlHorario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlInformacionLayout.createSequentialGroup()
-                        .addGap(65, 65, 65)
-                        .addComponent(lblArchivo)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblUbicacion)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblEstaciones)))
+                        .addGap(59, 59, 59)
+                        .addGroup(pnlInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(pnlInformacionLayout.createSequentialGroup()
+                                .addGroup(pnlInformacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lblArchivo)
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addComponent(lblUbicacion)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblEstaciones)))))
                 .addContainerGap(112, Short.MAX_VALUE))
         );
 
@@ -155,26 +174,17 @@ public class Automatizar extends javax.swing.JFrame {
                 .addGap(48, 48, 48)
                 .addGroup(pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblTitulo)
-                    .addGroup(pnlPrincipalLayout.createSequentialGroup()
-                        .addComponent(pnlInformacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jFileChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(pnlInformacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
         pnlPrincipalLayout.setVerticalGroup(
             pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlPrincipalLayout.createSequentialGroup()
                 .addGap(41, 41, 41)
                 .addComponent(lblTitulo)
-                .addGroup(pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlPrincipalLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(pnlInformacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(192, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPrincipalLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jFileChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                .addGap(30, 30, 30)
+                .addComponent(pnlInformacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -227,11 +237,12 @@ public class Automatizar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JFileChooser jFileChooser1;
-    private javax.swing.JFileChooser jFileChooser2;
+    private java.awt.Button button1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JLabel lblArchivo;
     private javax.swing.JLabel lblEstaciones;
     private javax.swing.JLabel lblHora;
