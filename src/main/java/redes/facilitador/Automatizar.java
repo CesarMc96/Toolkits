@@ -14,7 +14,7 @@ public class Automatizar extends javax.swing.JFrame {
 
     public Automatizar() {
         initComponents();
-        //rellenarComboBox();
+        rellenarComboBox();
         this.setLocationRelativeTo(null);
     }
 
