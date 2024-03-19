@@ -11,6 +11,6 @@ package redes.facilitador;
 public class Facilitador {
 
     public static void main(String[] args) {
-        new Automatizar().setVisible(true);
+        new NewJFrame().setVisible(true);
     }
 }
