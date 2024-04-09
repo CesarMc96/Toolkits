@@ -12,10 +12,10 @@
     <meta name="author" content="César Alejandro Montaño Cortés">
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/heroic-features.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/heroic-features.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             <div class="col-md-4 col-sm-6 hero-feature">
                 <div class="thumbnail">
                     <div class="caption flat">
-                        <h3 style="cursor: pointer;">Tareas</h3>
+                        <h4 style="cursor: pointer;">Tareas</h4>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
             <div class="col-md-4 col-sm-6 hero-feature">
                 <div class="thumbnail">
                     <div class="caption flat">
-                        <h3 style="cursor: pointer;">Estatus Servidores</h3>
+                        <h4 style="cursor: pointer;">Estatus Servidores</h4>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
             <div class="col-md-4 col-sm-6 hero-feature">
                 <div class="thumbnail">
                     <div class="caption flat">
-                        <h3 style="cursor: pointer;">Lista Estaciones</h3>
+                        <h4 style="cursor: pointer;">Lista Estaciones</h4>
                     </div>
                 </div>
             </div>
@@ -51,54 +51,106 @@
     <div class="container" id="tareaPanel">
         <label> Nombre </label>
         <input type="text" name="nombreTarea" />
-        <br>
+        <br><br>
         <div id="form" style="width:350px;">
             <fieldset>
-                <legend>General Information</legend>
+                <legend>Información</legend>
                 <table>
                     <tr>
-                        <td><span style="text-decoration:underline">C</span>hange Password To:</td>
-                        <td><input type="text" /></td>
-                    </tr>
-                    <tr>
-                        <td><span style="text-decoration:underline">C</span>onfirm Password:</td>
-                        <td><input type="text" /></td>
+                        <td>Archivo</td>
+                        <td><input type="text" id="archivo" /></td>
+                        <td></td>
+                        <td>IP</td>
+                        <td><input type="text" id="ip" /></td>
+                        <td></td>
+                        <td>Estaciones</td>
+                        <td><input type="text" id="ip" /></td>
                     </tr>
                 </table>
             </fieldset>
         </div>
-
-        <fieldset style="width:100px;">
-
-<legend>
-
-Please Enter Your Name</legend>
-
-<br>
-
-<table>
-
-<tr>
-
-<td>First Name:</td>
-
-<td><input type="text" /></td>
-
-</tr>
-
-<tr>
-
-<td>Last Name:</td>
-
-<td><input type="text" /></td>
-
-</tr>
-
-</table>
-
-</fieldset>
+        <div id="form" style="width:350px;">
+            <fieldset>
+                <legend>Horario</legend>
+                <table>
+                    <tr>
+                        <td>Hora</td>
+                        <td><input type="text" id="hora" /></td>
+                        <td></td>
+                        <td>Minutos</td>
+                        <td><input type="text" id="minutos" /></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
     </div>
 
 </body>
 
 </html>
+
+<style>
+    fieldset {
+        display: block;
+        margin-inline-start: 2px;
+        margin-inline-end: 2px;
+        padding-block-start: 0.35em;
+        padding-inline-start: 0.75em;
+        padding-inline-end: 0.75em;
+        padding-block-end: 0.625em;
+        min-inline-size: min-content;
+        border-width: 2px;
+        border-style: groove;
+        border-color: rgb(192, 192, 192);
+        border-image: initial;
+    }
+
+    legend {
+        display: block;
+        padding-inline-start: 2px;
+        padding-inline-end: 2px;
+        unicode-bidi: isolate;
+        border-width: initial;
+        border-style: none;
+        border-color: initial;
+        border-image: initial;
+    }
+
+    table {
+        display: table;
+        border-collapse: separate;
+        box-sizing: border-box;
+        text-indent: initial;
+        unicode-bidi: isolate;
+        line-height: normal;
+        font-weight: normal;
+        font-size: medium;
+        font-style: normal;
+        color: -internal-quirk-inherit;
+        text-align: start;
+        border-spacing: 2px;
+        border-color: gray;
+        white-space: normal;
+        font-variant: normal;
+    }
+
+    tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        unicode-bidi: isolate;
+        border-color: inherit;
+    }
+
+    tr {
+        display: table-row;
+        vertical-align: inherit;
+        unicode-bidi: isolate;
+        border-color: inherit;
+    }
+
+    td {
+        display: table-cell;
+        vertical-align: inherit;
+        unicode-bidi: isolate;
+    }
+</style>
